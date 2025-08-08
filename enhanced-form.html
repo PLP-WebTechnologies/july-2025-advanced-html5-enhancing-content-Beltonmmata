@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Enhanced HTML5 Page with Forms</title>
+  </head>
+  <body>
+    <!-- ===== Header Section ===== -->
+    <header>
+      <h1>Welcome to My Enhanced HTML5 Page</h1>
+      <p>
+        This page demonstrates lists, tables, media, and a complete form with
+        validation.
+      </p>
+    </header>
+
+    <!-- ===== Lists Section ===== -->
+    <section>
+      <h2>📋 My Top Skills</h2>
+      <ul>
+        <li>HTML5 & CSS3</li>
+        <li>JavaScript (Vanilla + Frameworks)</li>
+        <li>Responsive Design</li>
+      </ul>
+
+      <h3>Languages Known</h3>
+      <ol>
+        <li>English</li>
+        <li>Kiswahili</li>
+        <li>French</li>
+      </ol>
+    </section>
+
+    <!-- ===== Table Section ===== -->
+    <section>
+      <h2>📊 Weekly Schedule</h2>
+      <table border="1">
+        <thead>
+          <tr>
+            <th>Day</th>
+            <th>Activity</th>
+          </tr>
+        </thead>
+        <tbody>
+          <tr>
+            <td>Monday</td>
+            <td>Web development II</td>
+          </tr>
+          <tr>
+            <td>Tuesday</td>
+            <td>Python</td>
+          </tr>
+          <tr>
+            <td>Wednesday</td>
+            <td>Hackerthon launch</td>
+          </tr>
+          <tr>
+            <td>Thursday</td>
+            <td>Database Design</td>
+          </tr>
+          <tr>
+            <td>Friday</td>
+            <td>Entrepreneurial and startup</td>
+          </tr>
+        </tbody>
+      </table>
+    </section>
+
+    <!-- ===== Media Section ===== -->
+    <section>
+      <h2>🎵 & 🎥 Media Content</h2>
+      <!-- image -->
+      <img src="https://via.placeholder.com/400x200" alt="Sample Image" />
+      <!-- audio -->
+      <audio controls>
+        <source src="sample-audio.mp3" type="audio/mp3" />
+        Your browser does not support the audio element.
+      </audio>
+      <!-- video -->
+      <video width="400" controls>
+        <source src="sample-video.mp4" type="video/mp4" />
+        Your browser does not support the video tag.
+      </video>
+    </section>
+
+    <!-- ===== Form Section ===== -->
+    <section>
+      <h2>📝 Contact Form</h2>
+      <form>
+        <fieldset>
+          <legend>Personal Details</legend>
+
+          <label for="fullname">Full Name:</label>
+          <input
+            type="text"
+            id="fullname"
+            name="fullname"
+            required
+            minlength="3"
+            placeholder="John Doe"
+          /><br /><br />
+
+          <label for="email">Email:</label>
+          <input
+            type="email"
+            id="email"
+            name="email"
+            required
+            placeholder="john@example.com"
+            autocomplete="email"
+          /><br /><br />
+
+          <label for="age">Age:</label>
+          <input
+            type="number"
+            id="age"
+            name="age"
+            min="18"
+            max="99"
+            required
+          /><br /><br />
+        </fieldset>
+
+        <fieldset>
+          <legend>Account Setup</legend>
+
+          <label for="username">Username:</label>
+          <input
+            type="text"
+            id="username"
+            name="username"
+            required
+            pattern="[a-zA-Z0-9]{5,}"
+            placeholder="5+ alphanumeric characters"
+          /><br /><br />
+
+          <label for="password">Password:</label>
+          <input
+            type="password"
+            id="password"
+            name="password"
+            required
+            minlength="6"
+            placeholder="Minimum 6 characters"
+          /><br /><br />
+
+          <label for="country">Country:</label>
+          <select id="country" name="country" required>
+            <option value="">--Select Country--</option>
+            <option value="ke">Kenya</option>
+            <option value="ug">Uganda</option>
+            <option value="tz">Tanzania</option></select
+          ><br /><br />
+
+          <label>Subscribe to newsletter?</label>
+          <input type="checkbox" name="subscribe" /> Yes<br /><br />
+
+          <input type="submit" value="Submit Form" />
+        </fieldset>
+      </form>
+    </section>
+
+    <!-- ===== Footer Section ===== -->
+    <footer>
+      <p>&copy; 2025 Your Name. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
